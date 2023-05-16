@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<manifest xmlns:a='http://schemas.android.com/apk/res/android' package='com.healthapp.homepage' a:versionCode='0' a:versionName='0'>
+    
+    <application a:label='Health App'
+                 a:icon="@mipmap/logo1">
+        <activity a:name='com.healthapp.homepage.HomePageActivity'>
+             <intent-filter>
+                <category a:name='android.intent.category.LAUNCHER'/>
+                <action a:name='android.intent.action.MAIN'/>
+             </intent-filter>
+        </activity>
+        <activity a:name='com.healthapp.mainpage.MainActivity'>
+             <intent-filter>
+                <category a:name='android.intent.category.DEFAULT'/>
+                <action a:name='android.intent.action.VIEW'/>
+             </intent-filter>
+        </activity>
+    </application>
+    <uses-permission a:name="android.permission.INTERNET" />
+</manifest>

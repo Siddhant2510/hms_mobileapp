@@ -1,0 +1,51 @@
+<RelativeLayout 
+   xmlns:android="http://schemas.android.com/apk/res/android" 
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="@color/white">
+
+   <!-- <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/thermometer" /> -->
+
+   <com.healthapp.mainpage.Element
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/temperature"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:image="@drawable/thermometer"
+    app:text="Temp" />
+
+    <com.healthapp.mainpage.Element
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/heartbeat"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/temperature"
+    android:layout_marginTop="25dp"
+    app:image="@drawable/beat"
+    app:text="BPS" />
+
+    <com.healthapp.mainpage.Element
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/spo2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/heartbeat"
+    android:layout_marginTop="25dp"
+    app:image="@drawable/spo2"
+    app:text="O2" />
+
+    <com.healthapp.mainpage.Element
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ecg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/spo2"
+    android:layout_marginTop="25dp"
+    app:image="@drawable/ecg"
+    app:text="ECG" />
+
+</RelativeLayout>
